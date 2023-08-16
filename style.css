@@ -127,3 +127,100 @@ body {
   width: 25vw;
   margin: 2vw;
 }
+
+
+/*AKSHAYA*/
+@font-face {
+  font-family: 'satoshi';
+  src: url(fonts/Satoshi-Regular.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'AppleGaramound-bold-italic';
+  src: url(fonts/AppleGaramond-BoldItalic.ttf);
+}
+@font-face {
+  font-family: 'FontspringVanguard-bold';
+  src: url(fonts/Fontspring-DEMO-vanguardcf-bold.otf);
+}
+@font-face {
+  font-family: 'AppleGaramound-italic';
+  src: url(fonts/AppleGaramond-LightItalic.ttf);
+}
+body{
+  margin: 0;
+}
+
+.whatisspirit_aks{
+  display: flex;
+  padding: 2vw 10.4vw 1vw 10.4vw;
+}
+.text_aks p{
+  text-align: left;
+  font-style: satoshi;
+  font-size: 20px;
+}
+.text_aks h1{
+  font-family: AppleGaramound-bold-italic;
+  font-size: 65px;
+  margin-bottom: 0;
+}
+#mascot_aks{
+  background-color:#CFFF69;
+}
+.img_aks{
+  width: 30.9vw;
+  height: 20.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7vw;
+}
+.mascot{
+  height: 20vw;
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 30.9vw;
+  height: 20.6vw;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
