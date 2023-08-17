@@ -8,7 +8,13 @@ for (let i = 0; i < acc.length; i++) {
     else pannel.style.display = "block";
   });
 }
+//prem
+const hamburger = document.getElementById("hamburger");
+const hlinks = document.getElementById("hlinks");
 
+hamburger.addEventListener("click", () => {
+  hlinks.classList.toggle("active");
+});
 // RAHUL
 function updateValue(targetValue, valueElement) {
     const increment = Math.ceil(targetValue / 60); // Divide target by 60 to reach in 1 second
