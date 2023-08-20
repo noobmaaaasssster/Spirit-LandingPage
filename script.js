@@ -22,7 +22,8 @@ const hlinks = document.getElementById("hlinks");
 hamburger.addEventListener("click", () => {
   hlinks.classList.toggle("active");
 });
-// RAHUL
+
+
 function updateValue(targetValue, valueElement) {
     const increment = Math.ceil(targetValue / 60); // Divide target by 60 to reach in 1 second
     let currentValue = 0;
@@ -50,3 +51,4 @@ updateValue(audienceTarget, audienceValueElement);
 updateValue(sponsorsTarget, sponsorsValueElement);
 updateValue(footfallTarget, footfallValueElement);
 updateValue(customersTarget, customersValueElement);
+
