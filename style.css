@@ -1,217 +1,3 @@
-@font-face {
-  font-family: "Vanguard CF Demi Bold";
-  src: url("Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-demibold.otf")
-      format("woff2"),
-    url("Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-demibold.otf")
-      format("woff");
-}
-@font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Italic.otf")
-      format("woff2"),
-    url("Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Italic.otf")
-      format("woff");
-}
-@font-face {
-  font-family: "Apple Garamound";
-  src: url("apple_garamond/AppleGaramond-BoldItalic.ttf") format("woff2"),
-    url("apple_garamond/AppleGaramond-BoldItalic.ttf") format("woff");
-}
-body {
-  margin: 0;
-}
-.faq {
-  margin: 0;
-  margin-top: 3vw;
-  background-color: #141414;
-  color: white;
-  font-family: "Vanguard CF Demi Bold";
-  font-size: 4vw;
-  height: 5vw;
-  text-align: center;
-}
-.accordion {
-  margin: 3vw;
-  margin-top: 1vw;
-  margin-bottom: 0;
-  background-color: #cfff69;
-  padding-left: 5vw;
-  height: 6vw;
-  width: 90vw;
-  font-size: 3vw;
-  font-family: "Satoshi";
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.active,
-.accordion {
-  width: 90vw;
-}
-.pannel {
-  display: none;
-  margin-left: 3vw;
-  background-color: #141414;
-  width: 90vw;
-  height: 20vw;
-  color: white;
-  overflow: hidden;
-  display: none;
-  font-family: "Satoshi";
-  margin-bottom: 1.5vw;
-}
-.active,
-.pannel {
-  max-height: 15vw;
-}
-.pannel p {
-  margin: 0;
-  padding: 2vw;
-  font-size: 3vw;
-  font-family: "Satoshi";
-}
-.sponsor {
-  display: flex;
-  flex-direction: column;
-}
-.title {
-  margin: 2vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.title h1 {
-  font-size: 5vw;
-  font-family: Apple Garamond;
-  margin-top: 5vw;
-  margin-bottom: 0;
-}
-.sponsor_line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sponsor p {
-  margin-top: 1vw;
-  padding: 0;
-  font-size: 1.5vw;
-}
-.sponsor_img {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sponsor_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.gekoson {
-  width: 20vw;
-  margin: 3vw;
-}
-.paramount {
-  height: 15vw;
-  width: 30vw;
-  margin: 3vw;
-}
-.ies {
-  height: 15vw;
-  width: 20vw;
-  margin: 3vw;
-}
-.gplus {
-  height: 10vw;
-  width: 25vw;
-  margin: 2vw;
-}
-.chess {
-  height: 10vw;
-  width: 25vw;
-  margin: 2vw;
-}
-@media (max-width: 768px) {
-  .faq {
-    margin: 0;
-    margin-top: 6vw;
-    margin-bottom: 6vw;
-    font-size: 12vw;
-    height: 18vw;
-  }
-
-  .accordion {
-    margin: 3vw;
-    margin-top: 1vw;
-    margin-bottom: 0;
-    padding-left: 5vw;
-    height: 12vw;
-    width: 90vw;
-    font-size: 5vw;
-    font-weight: 500;
-  }
-
-  .active,
-  .accordion {
-    width: 90vw;
-  }
-
-  .pannel {
-    margin-left: 3vw;
-    width: 90vw;
-    height: 30vw;
-    margin-bottom: 3vw;
-  }
-
-  .pannel p {
-    font-size: 4vw;
-    padding: 3vw;
-  }
-
-  .title h1 {
-    font-size: 10vw;
-    font-family: Apple Garamond;
-    margin-top: 5vw;
-    margin-bottom: 0;
-  }
-  .sponsor p {
-    margin-top: 1vw;
-    padding: 0;
-    font-size: 4vw;
-  }
-  .sponsor_img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gekoson {
-    width: 40vw;
-    height: 40vw;
-    margin: 4vw;
-  }
-  .paramount {
-    width: 80vw;
-    height: 40vw;
-    margin: 4vw;
-  }
-  .ies {
-    width: 50vw;
-    height: 40vw;
-    margin: 4vw;
-  }
-  .gplus {
-    width: 80vw;
-    height: 40vw;
-    margin: 4vw;
-  }
-  .chess {
-    width: 80vw;
-    height: 30vw;
-  }
-}
-
 /*prem*/
 *{
     margin: 0;
@@ -227,8 +13,10 @@ body {
     justify-content:space-between;
     height: 120px;
     padding-top: 15px;
-    /*position: sticky;
-    z-index: 1;*/
+    /* position: sticky; */
+    z-index: 2;
+    position: fixed;
+    width:100%;
 }
 
 .year{
@@ -473,297 +261,297 @@ body {
       margin: 0 10px;
     }
   }
-  
-/*RAHUL  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-@font-face {
-  font-family: fontspring;
-  src: url("Demo_Fonts/Fontspring-DEMO-vanguardcf-boldoblique.otf") format("truetype");
-}
-
-@font-face {
-  font-family: satoshi;
-  src: url("Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf") format("truetype");
-}
-
-@font-face {
-  font-family: garamond;
-  src: url("apple_garamond/AppleGaramond.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: league;
-  src: url("League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf");
-}
-
-/* landing page */
-#container {
-  width: 100vw;
-  height: auto;
-  background-color: #141414;
-  position: relative;
-}
-
-#mainpage {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  margin: -4.8vw 0;
-}
-
-/* landing page -- information*/
-#info {
-  position: absolute;
-  color: white;
-  top: 1.7vw;
-  left: 30vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-}
-
-#info h1 {
-  font-family: fontspring;
-  font-size: 17vw;
-  font-weight: 700;
-  padding: 18px;
-}
-#info h3 {
-  font-family: garamond;
-  font-size: 3.5vw;
-  font-style: italic;
-  font-weight: 700;
-  padding: 4px;
-  margin-top: -35px;
-}
-
-#info p {
-  font-family: satoshi;
-  width: 41.88vw;
-  font-size: 2.2vw;
-  text-align: center;
-  margin-top: 2.6vw;
-}
-
-#info a {
-  width: 16.77vw;
-  height: auto;
-  font-family: garamond;
-  font-size: 3.5vw;
-  color: #cfff69;
-  font-style: italic;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top:1vw ;
-}
-
-#info a img {
-  width: 3.5vw;
-  padding-left: 5px;
-}
 
 
 
 
-@media screen and (max-width:560px) {
-  #info{
-    top:-1.5px;
-  }
-
-  #info h3{
-    margin-top: -25px;
-  }
-}
-
-/* landing
-
-
-
-/* slider */
-.carousel-container {
-  overflow: hidden;
-  white-space: nowrap;
-  background-color: #CFFF69;
-  height: auto;
-}
-
-.carousel {
-  display: inline-block;
-  animation:15s carouselMove infinite linear;
-  padding: 15px 0px;
-  margin-top: 8px;
-
-}
-
-.carousel img {
-  height: 25vw;
-  border: 1px solid black;
-  padding: 10px 20px;
-}
-
-@keyframes carouselMove {
-  0% {
-    transform: translateX(0)
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* slider ends */
-
-/* odometer */
-
-#odometer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: black;
-  color: white;
-  height: 17.5vw;
-  padding: 0px 5vw;
-}
-
-.stat-value{
-  font-size: 9vw;
-  font-family: league;
-}
-
-.stat-label {
-  font-size: 2vw;
-  font-family: satoshi;
-  margin-top: -1.2vw;
-  margin-left: .5vw;
-}
-
-.numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.plus_sign {
-  font-size: 4vw;
-  font-weight: 800;
-}
-
-#thousandK{
-  font-size: 9vw;
-  font-family: league;
-}
-
-/* odemeter ends */
-
-/*AKSHAYA*/
-@font-face {
-  font-family: 'satoshi';
-  src: url(fonts/Satoshi-Regular.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'AppleGaramound-bold-italic';
-  src: url(fonts/AppleGaramond-BoldItalic.ttf);
-}
-@font-face {
-  font-family: 'FontspringVanguard-bold';
-  src: url(fonts/Fontspring-DEMO-vanguardcf-bold.otf);
-}
-@font-face {
-  font-family: 'AppleGaramound-italic';
-  src: url(fonts/AppleGaramond-LightItalic.ttf);
-}
-body{
-  margin: 0;
-}
-
-.whatisspirit_aks{
-  display: flex;
-  padding: 2vw 10.4vw 1vw 10.4vw;
-}
-.text_aks p{
-  text-align: left;
-  font-style: satoshi;
-  font-size: 20px;
-}
-.text_aks h1{
-  font-family: AppleGaramound-bold-italic;
-  font-size: 65px;
-  margin-bottom: 0;
-}
-#mascot_aks{
-  background-color:#CFFF69;
-}
-.img_aks{
-  width: 30.9vw;
-  height: 20.6vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.imgbox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 7vw;
-}
-.mascot{
-  height: 20vw;
-}
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 30.9vw;
-  height: 20.6vw;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-/* ADHIKANSH */
-body{
+  * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  @font-face {
+    font-family: fontspring;
+    src: url("Demo_Fonts/Fontspring-DEMO-vanguardcf-boldoblique.otf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: satoshi;
+    src: url("Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: garamond;
+    src: url("apple_garamond/AppleGaramond.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: league;
+    src: url("League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf");
+  }
+  
+  /* landing page */
+  #container {
+    width: 100vw;
+    height: auto;
+    background-color: #141414;
+    margin-top: 120px;
+  }
+  
+  #mainpage {
+    display: flex;
+    justify-content: center;
+    height: 100vw;
+    margin: -4.8vw 0;
+  }
+  
+  /* landing page -- information*/
+  #info {
+    color: white;
+    top: 1.7vw;
+    left: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #info h1 {
+    font-family: fontspring;
+    font-size: 17vw;
+    font-weight: 700;
+    padding: 18px;
+  }
+  #info h3 {
+    font-family: garamond;
+    font-size: 3.5vw;
+    font-style: italic;
+    font-weight: 700;
+    padding: 4px;
+    margin-top: -35px;
+  }
+  
+  #info p {
+    font-family: satoshi;
+    width: 41.88vw;
+    font-size: 2.2vw;
+    text-align: center;
+    margin-top: 2.6vw;
+  }
+  
+  #info a {
+    width: 16.77vw;
+    height: auto;
+    font-family: garamond;
+    font-size: 3.5vw;
+    color: #cfff69;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top:1vw ;
+  }
+  
+  #info a img {
+    width: 3.5vw;
+    padding-left: 5px;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:560px) {
+    #info{
+      top:-1.5px;
+    }
+  
+    #info h3{
+      margin-top: -25px;
+    }
+  }
+  
+  /* landing
+  
+  
+  
+  /* slider */
+  .carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #CFFF69;
+    height: auto;
+  }
+  
+  .carousel {
+    display: inline-block;
+    animation:15s carouselMove infinite linear;
+    padding: 15px 0px;
+    margin-top: 8px;
+  
+  }
+  
+  .carousel img {
+    height: 25vw;
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+  
+  @keyframes carouselMove {
+    0% {
+      transform: translateX(0)
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* slider ends */
+  
+  /* odometer */
+  
+  #odometer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: black;
+    color: white;
+    height: 17.5vw;
+    padding: 0px 5vw;
+  }
+  
+  .stat-value{
+    font-size: 9vw;
+    font-family: league;
+  }
+  
+  .stat-label {
+    font-size: 2vw;
+    font-family: satoshi;
+    margin-top: -1.2vw;
+    margin-left: .5vw;
+  }
+  
+  .numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plus_sign {
+    font-size: 4vw;
+    font-weight: 800;
+  }
+  
+  #thousandK{
+    font-size: 9vw;
+    font-family: league;
+  }
+  
+  /* odemeter ends */
+
+
+  /*AKSHAYA*/
+@font-face {
+    font-family: 'satoshi';
+    src: url(fonts/Satoshi-Regular.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'AppleGaramound-bold-italic';
+    src: url(fonts/AppleGaramond-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: 'FontspringVanguard-bold';
+    src: url(fonts/Fontspring-DEMO-vanguardcf-bold.otf);
+  }
+  @font-face {
+    font-family: 'AppleGaramound-italic';
+    src: url(fonts/AppleGaramond-LightItalic.ttf);
+  }
+  body{
+    margin: 0;
+  }
+  
+  .whatisspirit_aks{
+    display: flex;
+    padding: 2vw 10.4vw 1vw 10.4vw;
+  }
+  .text_aks p{
+    text-align: left;
+    font-style: satoshi;
+    font-size: 20px;
+  }
+  .text_aks h1{
+    font-family: AppleGaramound-bold-italic;
+    font-size: 65px;
+    margin-bottom: 0;
+  }
+  #mascot_aks{
+    background-color:#CFFF69;
+  }
+  .img_aks{
+    width: 30.9vw;
+    height: 20.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7vw;
+  }
+  .mascot{
+    height: 20vw;
+  }
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-box {
+    background-color: transparent;
+    width: 30.9vw;
+    height: 20.6vw;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+  
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  body{
+    margin: 0;
+    position: relative;
 }
 header{
     display: flex;
-    
+    position: fixed;
     height: 40vh;
     gap: 0;
     
@@ -902,3 +690,229 @@ header{
         width: 60vw;
     }
 }
+}
+.hi{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Vanguard CF Demi Bold";
+    src: url("Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-demibold.otf")
+        format("woff2"),
+      url("Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-demibold.otf")
+        format("woff");
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Italic.otf")
+        format("woff2"),
+      url("Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Italic.otf")
+        format("woff");
+  }
+  @font-face {
+    font-family: "Apple Garamound";
+    src: url("apple_garamond/AppleGaramond-BoldItalic.ttf") format("woff2"),
+      url("apple_garamond/AppleGaramond-BoldItalic.ttf") format("woff");
+  }
+  body {
+    margin: 0;
+  }
+  .faq {
+    margin: 0;
+    margin-top: 3vw;
+    background-color: #141414;
+    color: white;
+    font-family: "Vanguard CF Demi Bold";
+    font-size: 4vw;
+    height: 5vw;
+    text-align: center;
+  }
+  .accordion {
+    margin: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+    background-color: #cfff69;
+    padding-left: 5vw;
+    height: 6vw;
+    width: 90vw;
+    font-size: 3vw;
+    font-family: "Satoshi";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .active,
+  .accordion {
+    width: 90vw;
+  }
+  .pannel {
+    display: none;
+    margin-left: 3vw;
+    background-color: #141414;
+    width: 90vw;
+    height: 20vw;
+    color: white;
+    overflow: hidden;
+    display: none;
+    font-family: "Satoshi";
+    margin-bottom: 1.5vw;
+  }
+  .active,
+  .pannel {
+    /* max-height: 15vw; */
+  }
+  .pannel p {
+    margin: 0;
+    padding: 2vw;
+    font-size: 3vw;
+    font-family: "Satoshi";
+  }
+  .sponsor {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    margin: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: 5vw;
+    font-family: Apple Garamond;
+    margin-top: 5vw;
+    margin-bottom: 0;
+  }
+  .sponsor_line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsor p {
+    margin-top: 1vw;
+    padding: 0;
+    font-size: 1.5vw;
+  }
+  .sponsor_img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sponsor_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gekoson {
+    width: 20vw;
+    margin: 3vw;
+  }
+  .paramount {
+    height: 15vw;
+    width: 30vw;
+    margin: 3vw;
+  }
+  .ies {
+    height: 15vw;
+    width: 20vw;
+    margin: 3vw;
+  }
+  .gplus {
+    height: 10vw;
+    width: 25vw;
+    margin: 2vw;
+  }
+  .chess {
+    height: 10vw;
+    width: 25vw;
+    margin: 2vw;
+  }
+  @media (max-width: 768px) {
+    .faq {
+      margin: 0;
+      margin-top: 6vw;
+      margin-bottom: 6vw;
+      font-size: 12vw;
+      height: 18vw;
+    }
+  
+    .accordion {
+      margin: 3vw;
+      margin-top: 1vw;
+      margin-bottom: 0;
+      padding-left: 5vw;
+      height: 12vw;
+      width: 90vw;
+      font-size: 5vw;
+      font-weight: 500;
+    }
+  
+    .active,
+    .accordion {
+      width: 90vw;
+    }
+  
+    .pannel {
+      margin-left: 3vw;
+      width: 90vw;
+      height: 30vw;
+      margin-bottom: 3vw;
+    }
+  
+    .pannel p {
+      font-size: 4vw;
+      padding: 3vw;
+    }
+  
+    .title h1 {
+      font-size: 10vw;
+      font-family: Apple Garamond;
+      margin-top: 5vw;
+      margin-bottom: 0;
+    }
+    .sponsor p {
+      margin-top: 1vw;
+      padding: 0;
+      font-size: 4vw;
+    }
+    .sponsor_img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gekoson {
+      width: 40vw;
+      height: 40vw;
+      margin: 4vw;
+    }
+    .paramount {
+      width: 80vw;
+      height: 40vw;
+      margin: 4vw;
+    }
+    .ies {
+      width: 50vw;
+      height: 40vw;
+      margin: 4vw;
+    }
+    .gplus {
+      width: 80vw;
+      height: 40vw;
+      margin: 4vw;
+    }
+    .chess {
+      width: 80vw;
+      height: 30vw;
+    }
+  }
+  
