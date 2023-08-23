@@ -24,6 +24,7 @@ hamburger.addEventListener("click", () => {
   hlinks.classList.toggle("active");
 });
 
+// RAHUL
 function updateValue(targetValue, valueElement) {
   const increment = Math.ceil(targetValue / 60); // Divide target by 60 to reach in 1 second
   let currentValue = 0;
@@ -47,10 +48,39 @@ const sponsorsTarget = 2000;
 const footfallTarget = 100;
 const customersTarget = 40;
 
-updateValue(audienceTarget, audienceValueElement);
-updateValue(sponsorsTarget, sponsorsValueElement);
-updateValue(footfallTarget, footfallValueElement);
-updateValue(customersTarget, customersValueElement);
+function isVisible(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+const odometerElement = document.getElementById("odometer");
+let hasRun = false; 
+
+// Listen for scroll and resize events
+window.addEventListener("scroll", () => {
+  if (!hasRun && isVisible(odometerElement)) {
+    hasRun = true; // Set the flag to true
+
+    odometerElement.style.visibility = "visible";
+    odometerElement.style.opacity = "1";
+
+    startAnimation();
+  }
+});
+
+function startAnimation() {
+  updateValue(audienceTarget, audienceValueElement);
+  updateValue(sponsorsTarget, sponsorsValueElement);
+  updateValue(footfallTarget, footfallValueElement);
+  updateValue(customersTarget, customersValueElement);
+}
+
 
 async function sports() {
   const apikey = "e5a6e05216a74477b5ea26e1c01864ce";

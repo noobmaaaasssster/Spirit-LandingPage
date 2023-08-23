@@ -10,10 +10,10 @@
   border-bottom: #cfff69 solid 1px;
   display: flex;
   justify-content: space-between;
-  height: 12vw;
+  height: 7.75vw;
   padding-top: 1.2vw;
   z-index: 2;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 .spir {
@@ -257,6 +257,7 @@
   }
 }
 
+/*RAHUL  */
 * {
   margin: 0;
   padding: 0;
@@ -265,46 +266,60 @@
 }
 @font-face {
   font-family: fontspring;
-  src: url("Demo_Fonts/Fontspring-DEMO-vanguardcf-boldoblique.otf")
-    format("truetype");
+  src: url("fonts/Demo_Fonts/Fontspring-DEMO-vanguardcf-boldoblique.otf") format("truetype");
 }
 
 @font-face {
   font-family: satoshi;
-  src: url("Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf") format("truetype");
+  src: url("fonts/Satoshi_Commplete/Fonts/OTF/Satoshi-Regular.otf") format("truetype");
 }
 
 @font-face {
   font-family: garamond;
-  src: url("apple_garamond/AppleGaramond.ttf") format("truetype");
+  src: url("fonts/apple_garamond/AppleGaramond.ttf") format("truetype");
 }
 
 @font-face {
   font-family: league;
-  src: url("League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf");
+  src: url("fonts/League_Gothic/static/LeagueGothic-Regular-VariableFont_wdth.ttf");
 }
 
 /* landing page */
-#container {
-  width: 100vw;
-  height: auto;
-  background-color: #141414;
-  margin-top: 120px;
-}
 
 #mainpage {
   display: flex;
   justify-content: center;
-  height: 100vw;
-  margin: -4vw 0;
-  background: url("images/Group\ 59\ \(1\).png");
-  background-repeat: no-repeat;
+  /* height: 100%; */
+  margin: -4.5vw 0;
+  background-color: #141414;
 }
 
 /* landing page -- information*/
+#cross{
+  position:absolute;
+  color: #CFFF69;
+  font-size: 3.5vw;
+  top: 13vw;
+  left: 10vw;
+  letter-spacing: 1vw;
+ 
+}
+#slash{
+  padding: .5vw;
+  position: absolute;
+  color: #CFFF69;
+  font-size: 4vw;
+  text-align: right;
+  top: 56vw;
+  left: 70vw;
+  font-weight: bold;
+  font-style: italic;
+}
+
 #info {
+  position: absolute;
   color: white;
-  top: 1.7vw;
+  top: 9vw;
   left: 30vw;
   display: flex;
   justify-content: space-evenly;
@@ -345,7 +360,7 @@
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 1vw;
+  margin-top:1vw ;
 }
 
 #info a img {
@@ -353,44 +368,45 @@
   padding-left: 5px;
 }
 
-@media screen and (max-width: 560px) {
-  #info {
-    top: -1.5px;
-  }
 
-  #info h3 {
+
+
+@media screen and (max-width:560px) {
+ 
+  #info h3{
     margin-top: -25px;
   }
 }
 
 /* landing
-  
-  
-  
-  /* slider */
+
+
+
+/* slider */
 .carousel-container {
   overflow: hidden;
   white-space: nowrap;
-  background-color: #cfff69;
+  background-color: #CFFF69;
   height: auto;
 }
 
 .carousel {
   display: inline-block;
-  animation: 15s carouselMove infinite linear;
-  padding: 15px 0px;
+  animation:15s carouselMove infinite linear;
+  padding: 1vw 0px;
   margin-top: 8px;
+
 }
 
 .carousel img {
   height: 25vw;
   border: 1px solid black;
-  padding: 10px 20px;
+  padding: 1vw 2vw;
 }
 
 @keyframes carouselMove {
   0% {
-    transform: translateX(0);
+    transform: translateX(0)
   }
   100% {
     transform: translateX(-100%);
@@ -411,7 +427,7 @@
   padding: 0px 5vw;
 }
 
-.stat-value {
+.stat-value{
   font-size: 9vw;
   font-family: league;
 }
@@ -420,7 +436,7 @@
   font-size: 2vw;
   font-family: satoshi;
   margin-top: -1.2vw;
-  margin-left: 0.5vw;
+  margin-left: .5vw;
 }
 
 .numbers {
@@ -433,7 +449,7 @@
   font-weight: 800;
 }
 
-#thousandK {
+#thousandK{
   font-size: 9vw;
   font-family: league;
 }
