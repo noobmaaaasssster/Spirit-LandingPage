@@ -10,10 +10,10 @@
   border-bottom: #cfff69 solid 1px;
   display: flex;
   justify-content: space-between;
-  height: 12vw;
+  height: 7.75vw;
   padding-top: 1.2vw;
   z-index: 2;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 .spir {
@@ -285,19 +285,13 @@
 }
 
 /* landing page */
-#container {
-  width: 100vw;
-  height: 67vw;
-  background-color: #141414;
-  position: relative;
-  
-}
 
 #mainpage {
   display: flex;
   justify-content: center;
-  height: 100%;
-  margin: -4.8vw 0;
+  /* height: 100%; */
+  margin: -4.5vw 0;
+  background-color: #141414;
 }
 
 /* landing page -- information*/
@@ -305,24 +299,27 @@
   position:absolute;
   color: #CFFF69;
   font-size: 3.5vw;
-  top: 11vw;
+  top: 13vw;
   left: 10vw;
   letter-spacing: 1vw;
  
 }
 #slash{
+  padding: .5vw;
   position: absolute;
   color: #CFFF69;
   font-size: 4vw;
   text-align: right;
   top: 56vw;
   left: 70vw;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #info {
   position: absolute;
   color: white;
-  top: 10.2vw;
+  top: 9vw;
   left: 30vw;
   display: flex;
   justify-content: space-evenly;
@@ -375,10 +372,7 @@
 
 
 @media screen and (max-width:560px) {
-  #info{
-    top: 10vw;
-  }
-
+ 
   #info h3{
     margin-top: -25px;
   }
