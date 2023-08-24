@@ -17,11 +17,11 @@ accordions.forEach(function (accordion) {
   });
 });
 //prem
-const hamburger = document.getElementById("hamburger");
-const hlinks = document.getElementById("hlinks");
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener("click", () => {
-  hlinks.classList.toggle("active");
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
 });
 
 function updateValue(targetValue, valueElement) {
@@ -84,3 +84,6 @@ async function sports() {
   imgElement3.src = iconUrl3;
 }
 sports();
+
+
+// sanyam
