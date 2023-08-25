@@ -156,10 +156,7 @@ nav {
   width: 10vw;
   padding: 5px 0;
 }
-.blank {
-  height: 400px;
-  background-color: #141414;
-}
+
 .footer {
   background-color: #cfff69;
   height: 410px;
@@ -216,32 +213,67 @@ nav {
   .year span {
     font-size: 18px;
   }
-  .footer {
-    flex-direction: column;
-    padding: 20px;
-    height: auto;
+
+}
+
+@media (max-width:830px) {
+  .footer{
+    padding: 50px 10px;
   }
-  .qlinks {
-    margin-top: 10px;
-    text-align: center;
+  .con{
+    font-size: 2vw;
+    padding-right: 10px;
   }
-  .qlinks label {
-    font-size: 16px;
+  .qlinks h1{
+    font-size: 4.5vw;
+    padding-right: 20px;
+  }
+  .qlinks a{
+    font-size: 2.5vw;
+  }
+  .frame_spir{
+    width: 35vw;
+  }
+  #foot_1{
+    justify-content: space-evenly;
+  }
+  .Copyright{
+    padding-right: 30px;
+    font-size: 2vw;
   }
 
-  .qlinks .ql li {
-    font-size: 18px;
-    padding: 5px 0;
+}
+@media (max-width:670px) {
+  .footer{
+    height: 60vw;
   }
-  .con {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-  }
-  .apps img {
-    margin: 0 10px;
+  .con{
+    padding-top: 5vw;
   }
 }
+@media (max-width:560px) {
+  .footer{
+   height: 335px;
+ } 
+ .con{
+   font-size: 2vw;
+ }
+}
+@media (max-width:400px) {
+  /* .footer{
+    flex-direction: column;
+  } */
+  .con{
+    padding-top: 8vw;
+  }
+
+  .apps img{
+    height: 16px;
+    margin: 0 2px;
+  }
+}
+
+/*header+footer ends*/
 * {
   margin: 0;
   padding: 0;
