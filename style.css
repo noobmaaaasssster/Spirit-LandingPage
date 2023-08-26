@@ -252,6 +252,8 @@ nav {
     margin: 0 10px;
   }
 }
+
+ /* RAHUL */
 * {
   margin: 0;
   padding: 0;
@@ -294,7 +296,6 @@ nav {
   margin-left: 16vw;
   height: 60vw;
   margin-top: -85px;
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -319,7 +320,7 @@ nav {
   margin-top: -35px;
 }
 #info p {
-  font-family: Satoshi;
+  font-family: satoshi;
   width: 41.88vw;
   font-size: 2.2vw;
   text-align: center;
@@ -350,6 +351,9 @@ nav {
   #info h3 {
     margin-top: -25px;
   }
+  .carousel{
+    padding: 0px 0px;
+  }
 }
 .carousel-container {
   overflow: hidden;
@@ -360,13 +364,13 @@ nav {
 .carousel {
   display: inline-block;
   animation: 15s carouselMove infinite linear;
-  padding: 15px 0px;
+  padding: .6vw 0px;
   margin-top: 8px;
 }
 .carousel img {
   height: 15vw;
   border: 1px solid black;
-  padding: 10px 20px;
+  padding: .5vw 1vw;
 }
 @keyframes carouselMove {
   0% {
@@ -439,24 +443,51 @@ body {
   padding: 5vw 10.4vw 1vw 10.4vw;
   justify-content: center;
   align-items: center;
-  height: 60vw;
+  /* height: 60vw; */
   width: 100%;
 }
 .whatisspirit_aks1 {
   display: flex;
   padding: 0vw 10.4vw 1vw 10.4vw;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
 }
-
 .text_aks {
-  width: 40vw;
-  flex: 1;
+  width: 40%;
+  padding-right: 15px;
+}
+.floating-container{
+  /* flex: 1; */
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.floating-image {
+  width: 18vw; /* Adjust the image size as needed */
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-25px); /* Adjust the float distance as needed */
+  }
 }
 .text_aks p {
   text-align: left;
-  font-style: satoshi;
+  font-family: satoshi;
   font-size: 1.5rem;
   margin-bottom: 1vw;
 }
@@ -470,7 +501,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vw;
+  /* height: 50vw; */
 }
 .flip-container {
   perspective: 100vw;
@@ -478,7 +509,7 @@ body {
 .flip-card {
   background-color: transparent;
   width: 35vw;
-  height: 26vw;
+  height: 23.3vw;
   transform-style: preserve-3d;
   animation: flipAnimation 2s ease-in-out infinite alternate;
 }
@@ -509,48 +540,7 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
-.img_aks {
-  width: 100%;
-  height: auto;
-}
-#mascot_aks {
-  background-color: #cfff69;
-}
-.floating-container {
-  /* width: 40vw;
-  /* height: 28vw; 
-  display: block;
-  align-items: center;
-  justify-content: center;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(-50%, -50%);
-  animation: floatAnimation 2s ease-in-out infinite alternate;
-  width: 40vw;
-}
-.imgbox1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100vh;
-  /*width: 40vw;
-  padding-left: 7vw;*/
-}
-.mascot-img {
-  /*width: auto;
-  height: 300px;*/
-  height: 20vw;
-  width: auto;
-}
-@keyframes floatAnimation {
-  0% {
-    transform: translate(-50%, -50%) translateY(350px) translateX(420px);
-  }
-  100% {
-    transform: translate(-50%, -50%) translateY(340px) translateX(400px);
-  }
-}
+
 .events {
   display: flex;
   flex-direction: column;
@@ -571,7 +561,7 @@ body {
 .events_top p {
   font-family: satoshi;
   width: 38vw;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .events_bottom {
   display: flex;
@@ -588,11 +578,12 @@ body {
   text-align: left;
   padding: 2vw;
   font-family: satoshi;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .register-aks {
   margin-top: 3vw;
-  font-size: 1.6vw;
+  font-size: 1.6rem;
+  margin-top: 8%;
 }
 .card {
   display: flex;
@@ -620,21 +611,37 @@ body {
 .card button:hover {
   opacity: 0.7;
 }
-
+#mascot_aks{
+  background-color:#cfff69;
+}
 @media (max-width: 600px) {
+
+  @keyframes floatAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-25px); /* Adjust the float distance as needed */
+    }
+  }
   .whatisspirit_aks {
     flex-direction: column;
     display: flex;
     padding: 1vw 10.4vw 1vw 10.4vw;
   }
+  .whatisspirit_aks1{
+    flex-direction: column;
+  }
   .text_aks {
     width: 100%;
+    text-align: center;
   }
   .text_aks h1 {
     font-size: 3.5rem;
   }
   .text_aks p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
   .imgbox {
     padding-left: 0;
@@ -659,10 +666,10 @@ body {
     flex-direction: column;
   }
   .img_aks {
-    width: 75vw;
+    /* width: 75vw; */
     object-fit: contain;
   }
-  .cards {
+  .card {
     width: 70vw;
   }
 }
