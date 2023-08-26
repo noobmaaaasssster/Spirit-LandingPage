@@ -17,12 +17,13 @@ accordions.forEach(function (accordion) {
   });
 });
 //prem
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.getElementById("hamburger");
+const navList = document.getElementById("hlinks");
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+hamburger.addEventListener("click", () => {
+  navList.classList.toggle("active");
 });
+
 
 function updateValue(targetValue, valueElement) {
   const increment = Math.ceil(targetValue / 60); // Divide target by 60 to reach in 1 second
