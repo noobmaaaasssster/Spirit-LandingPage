@@ -13,12 +13,9 @@
   height: 7.75vw;
   padding-top: 1.2vw;
   z-index: 2;
-  /* position: fixed; */
   width: 100%;
 }
-/* .spir {
-  height: 4vw;
-} */
+
 .year {
   display: flex;
   width: 45vw;
@@ -171,6 +168,7 @@
   }
   #hlinks{
     height:250px;
+    margin-top: 11px;
   }
   #hlinks li{
     height:30px;
@@ -240,31 +238,73 @@
   }
 }
 @media (max-width:560px) {
-   .footer{
-    height: 335px;
-  } 
+  .footer{
+    flex-direction: column;
+    height: 95vw;
+    padding: 20px 30px;
+  }
   .con{
-    font-size: 2vw;
+    padding: 10px 0;
+  }
+  #foot_1{
+    height: 40vw;
+    justify-content: space-between;
+  }
+  .qlinks{
+    padding-bottom: 0;
+  }
+  .frame_spir {
+    width: 40vw;
+  }
+  .Copyright {
+    padding-right: 30px;
+    font-size: 2.25vw;
+  }
+  .apps img{
+    height: 22px;
+  }
+  .qlinks h1 {
+    font-size: 5vw;
+    padding-right: 20px;
   }
 }
-@media (max-width:400px) {
-  /* .footer{
-    flex-direction: column;
-  } */
-  .con{
-    padding-top: 8vw;
+@media (max-width:420px) {
+  .footer{
+    height: 400px;
   }
-
+  #foot_1{
+    height: 170px;
+    justify-content: space-between;
+  }
+  .qlinks{
+    padding-bottom: 0;
+  }
+  .frame_spir {
+    width: 170px;
+  }
+  .Copyright {
+    padding-right: 30px;
+    font-size: 9.75px;
+  }
   .apps img{
     height: 16px;
-    margin: 0 2px;
+  }
+  .qlinks h1 {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .qlinks li{
+    font-size: 12px;
+  }
+  .con{
+    font-size: 10px;
   }
 }
-/* @media (max-width:440px) {
-  .con{
-    font-size: 1.75vw;
-  }
-} */
+
+
+/*header+footer css over*/
+
+
 
  /* RAHUL */
 * {
